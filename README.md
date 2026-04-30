@@ -16,7 +16,7 @@ Text Shadow is a desktop steganography application that securely hides encrypted
 ## Project Architecture
 Modular separation of concerns between core logic and UI components:
 ```
-text_shadow_app/
+Text-Shadow/
 ├── core/                      # Core steganography and cryptographic logic
 │   ├── constants.py           # Zero-width character definitions and UI color schemes
 │   └── steganography.py       # SteganographyEngine with crypto and encoding/decoding logic
@@ -72,9 +72,9 @@ Extraction reverses this process: zero-width characters extracted, converted to 
 - pip package manager
 
 ### Installation
-1. Navigate to the `text_shadow_app` directory:
+1. Navigate to the `Text-Shadow` directory:
    ```bash
-   cd text_shadow_app
+   cd Text-Shadow
    ```
 2. Create and activate a virtual environment (recommended):
    - **Windows**:
@@ -99,14 +99,14 @@ Double-click `run.bat` in the project directory.
 ### Option 2: Manual Launch (All Platforms)
 With virtual environment activated:
 ```bash
-python -m text_shadow_app.main
+python main.py
 ```
 
 ### Option 3: Direct Python Execution
 ```bash
-cd text_shadow_app
-venv/Scripts/python.exe -m text_shadow_app.main  # Windows
-venv/bin/python -m text_shadow_app.main          # macOS/Linux
+cd Text-Shadow
+venv/Scripts/python.exe main.py  # Windows
+venv/bin/python main.py          # macOS/Linux
 ```
 
 ## Usage Guide
