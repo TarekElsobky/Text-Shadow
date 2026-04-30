@@ -18,19 +18,14 @@ Modular separation of concerns between core logic and UI components:
 ```
 text_shadow_app/
 ├── core/                      # Core steganography and cryptographic logic
-│   ├── __init__.py
 │   ├── constants.py           # Zero-width character definitions and UI color schemes
 │   └── steganography.py       # SteganographyEngine with crypto and encoding/decoding logic
 ├── ui/                        # Graphical user interface components
-│   ├── __init__.py
 │   ├── ui_widgets.py          # Reusable UI elements (HoverButton, LogBox)
 │   └── ui_panels.py           # Main panels (Sidebar, HidePanel, ExtractPanel)
-├── __init__.py                # Package initialization
 ├── main.py                    # Application entry point and root window configuration
 ├── eyes.ico                   # Windows application icon
-├── requirements.txt           # Python dependencies
-├── run.bat                    # Windows quick-launch script
-└── venv/                      # Virtual environment (local, not version-controlled)
+└── requirements.txt           # Python dependencies
 ```
 
 ### Module Breakdown
